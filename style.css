@@ -1,7 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap");
+
 :root {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-/* MOBILE FIRST DESIGN */
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+main,
+.logo {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.image-content {
+  background-image: url(./form-image.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40vw;
+}
+
+.logo {
+  width: auto;
+  height: auto;
+  padding: 3rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h1 {
+  /* size, color */
+  font-size: 2rem;
+}
+
+.dots {
+  height: 15vh;
+}
+
+.form-content {
+  width: 60vw;
+  background-color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.left-side {
+  padding: 1em;
+}
+
+.description {
+  font-weight: bold;
+  width: 90%;
+  font-size: 1.4rem;
+}
+
+form {
+  background-color: bisque;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.input {
+  display: flex;
+  flex-flow: column wrap;
+  width: 40%;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: yellowgreen;
+}
+
+.title {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+input {
+  background-color: blue;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid pink;
+}
+
+button {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border: 2px solid yellow;
+  border-radius: 7px;
+  padding: 10px 40px;
+  margin: 40px 0;
+}
+
+button:hover {
+  background-color: aqua;
+  color: black;
+}
+
+.log-in {
+  display: flex;
+  gap: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: blueviolet;
+  font-weight: bold;
+}
+
+a:hover {
+  color: white;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    flex-flow: column;
+    height: auto;
+    text-align: center;
+  }
+  .image-content {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    background-size: 100vw;
+  }
+
+  .logo {
+    width: 100vw;
+    gap: 10px;
+  }
+
+  .form-content {
+    width: auto;
+    height: auto;
+  }
+
+  .description {
+    width: auto;
+    margin-top: 30px;
+  }
+
+  .left-side {
+    padding: 10px 20px;
+  }
+
+  form {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .input {
+    text-align: left;
+    width: auto;
+    font-size: 0.9em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input {
+    font-size: 0.9rem;
+    height: 1.5rem;
+    width: 70vw;
+  }
+
+  .button,
+  .log-in {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+
+  button {
+    margin-bottom: 0px;
+    width: 60vw;
+    padding: 10px 5px;
+  }
+}

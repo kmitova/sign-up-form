@@ -10,8 +10,8 @@
 <body>
   <main>
     <div class="image-content">
-      <div class="logo"><img src="" alt="">LOGO HERE
-      <h1>title</h1></div>
+      <div class="logo"><img class="dots" src="./logo.svg" alt="">
+      <h1>cosmos</h1></div>
     </div>
     <div class="form-content">
       <div class="description">
@@ -22,7 +22,8 @@
         <div class="left-side">
           <p class="title">Let's go!</p>
 
-          <div class="input">
+          <div class="row">
+            <div class="input">
             <label for="first-name">First Name</label>
             <input type="text" name="first-name" id="first-name" required>
           </div>
@@ -31,8 +32,11 @@
             <label for="last-name">Last Name</label>
             <input type="text" name="last-name" id="last-name" required>
           </div>
+          </div>
+          
+          <div class="row">
 
-          <div class="input">
+            <div class="input">
             <label for="email">Email</label>
             <input type="email" name="email" id="email" required>
           </div>
@@ -41,8 +45,10 @@
             <label for="phone">Phone Number</label>
             <input type="text" name="phone" id="phone" required minlength="10" maxlength="10">
           </div>
+          </div>
+          <div class="row">
 
-          <div class="input">
+            <div class="input">
             <label for="password">Password</label>
             <input type="password" name="password" id="password" required>
           </div>
@@ -50,6 +56,7 @@
           <div class="input">
             <label for="confirm-password">Confirm Password</label>
             <input type="password" name="confirm-password" id="confirm-password" required>
+          </div>
           </div>
         </div>
         <div class="sign-up-btn">
