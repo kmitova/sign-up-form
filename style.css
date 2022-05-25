@@ -11,6 +11,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
 }
 
 main {
@@ -75,7 +76,8 @@ h1 {
   font-size: 1.4rem;
   padding: 2em;
   padding-bottom: .5em;
-  color: var(--font-color)
+  color: var(--font-color);
+  margin-right: 1em;
 }
 
 form {
@@ -102,7 +104,7 @@ form {
 input {
   background-color: white;
   border: 1px solid #c97c5d;
-  border-radius: 5px;
+  border-radius: 3px;
   height: 2em;
   width: 80%;
   margin-top: .3em;
@@ -136,8 +138,9 @@ button:hover {
 
 .log-in {
   margin: 1em;
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  text-align: center;
   color: var(--font-color);
 }
 
@@ -159,67 +162,55 @@ a:hover {
   gap: 100px;
 }
 
-@media only screen and (max-width: 600px) {
+/* TABLET */
+
+@media only screen and (max-width: 900px) {
+  /* body {
+    overflow-x: auto;
+  } */
+  input {
+    /* display: unset; */
+    /* border: 2px solid red; */
+    width: 30vw;
+  }
+  .row {
+    display: unset;
+    margin: auto;
+  }
+  .description {
+    padding: 2em;
+  }
+  button {
+    margin-left: 2em;
+  }
+}
+
+/* PHONE */
+@media only screen and (max-width: 660px) {
   main {
-    flex-flow: column;
-    height: auto;
-    text-align: center;
+    display: unset;
   }
   .image-content {
-    width: 100vw;
-    height: 15vh;
-    display: flex;
-    background-size: 100vw;
+    width: 100%;
   }
-
-  .logo {
-    width: 100vw;
-    gap: 10px;
-  }
-
   .form-content {
-    width: auto;
-    height: auto;
+    width: 100%;
   }
-
-  .description {
-    width: auto;
-    margin-top: 30px;
-  }
-
-  .left-side {
-    padding: 10px 20px;
-  }
-
   form {
-    flex-flow: column nowrap;
-    align-items: center;
+    display: block;
+    text-align: center;
   }
-  .input {
-    text-align: left;
-    width: auto;
-    font-size: 0.9em;
-    justify-content: center;
-    align-items: center;
-  }
-
-  input {
-    font-size: 0.9rem;
-    height: 1.5rem;
-    width: 70vw;
-  }
-
-  .button,
-  .log-in {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0px;
-  }
-
   button {
-    margin-bottom: 0px;
-    width: 60vw;
-    padding: 10px 5px;
-    
+    margin: auto;
   }
+  input {
+    width: 80vw;
+  }
+  label {
+    font-size: .8rem;
+  }
+  .log-in {
+    display: inline;
+  }
+  
 }
