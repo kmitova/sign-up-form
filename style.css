@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap");
 
 :root {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  --color-form: #eed7c5;
+  --accent-color: #c97c5d;
+  --font-color: #4c494f;
 }
 
 body {
   font-family: "Nunito Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 main {
@@ -27,6 +30,9 @@ main,
   background-size: cover;
   background-repeat: no-repeat;
   width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
@@ -38,8 +44,12 @@ main,
 }
 
 h1 {
-  /* size, color */
-  font-size: 2rem;
+  font-size: 4rem;
+}
+.logo-title {
+  width: 100%;
+  background-color: whitesmoke;
+  opacity: 50%;
 }
 
 .dots {
@@ -48,29 +58,29 @@ h1 {
 
 .form-content {
   width: 60vw;
-  background-color: white;
-  display: flex;
-  flex-flow: column nowrap;
+  background-color: #f7ede2;
   justify-content: center;
 }
+
+/* .fields {
+  display: flex;
+} */
 
 .left-side {
   padding: 1em;
 }
 
 .description {
-  font-weight: bold;
   width: 90%;
   font-size: 1.4rem;
+  padding: 2em;
+  padding-bottom: .5em;
+  color: var(--font-color)
 }
 
 form {
-  background-color: bisque;
-  display: flex;
-  flex-flow: row wrap;
-  gap: 15px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background-color: var(--color-form);
+  padding: 20px;
 }
 
 .input {
@@ -79,7 +89,8 @@ form {
   width: 40%;
   font-size: 0.7rem;
   text-transform: uppercase;
-  color: yellowgreen;
+  color: #4c494f;
+  margin: .4em;
 }
 
 .title {
@@ -89,50 +100,62 @@ form {
 }
 
 input {
-  background-color: blue;
-  border: 1px solid red;
+  background-color: white;
+  border: 1px solid #c97c5d;
   border-radius: 5px;
+  height: 2em;
+  width: 80%;
+  margin-top: .3em;
 }
 
 input:focus {
   outline: none;
-  border: 2px solid pink;
+  border: 2px solid #b36a5e;
 }
 
 button {
-  background-color: green;
+  background-color: var(--accent-color);
   color: white;
   font-weight: bold;
-  font-size: 1.3rem;
-  border: 2px solid yellow;
+  font-size: 1rem;
+  /* border: 2px solid yellow; */
+  border: none;
   border-radius: 7px;
   padding: 10px 40px;
-  margin: 40px 0;
+  margin: auto;
+  display: block;
+  font-family: "Nunito Sans", sans-serif;
+  cursor: pointer;
+
 }
 
 button:hover {
-  background-color: aqua;
-  color: black;
+  background-color: #b36a5e;
+  color: #eee2df;
 }
 
 .log-in {
+  margin: 1em;
   display: flex;
-  gap: 5px;
+  justify-content: center;
+  color: var(--font-color);
 }
 
 a {
   text-decoration: none;
-  color: blueviolet;
+  color: #774936;
   font-weight: bold;
+  cursor: pointer;
 }
 
 a:hover {
-  color: white;
+  color: #50341f;
 }
 
 .row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   gap: 100px;
 }
 
@@ -197,5 +220,6 @@ a:hover {
     margin-bottom: 0px;
     width: 60vw;
     padding: 10px 5px;
+    
   }
 }
