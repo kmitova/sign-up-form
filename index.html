@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <div class="image-content">
+      <div class="logo"><img src="" alt="">LOGO HERE
+      <h1>title</h1></div>
+    </div>
+    <div class="form-content">
+      <div class="description">
+        <p>Sign up here to receive all of the hottest offers from the world of beauty! SERVICE NAME scans over 1500 stores everyday so you don't have to hunt for the bargain!</p>
+        <p>Sign up <em>now</em> to get started.</p>
+      </div>
+      <form action="#">
+        <div class="left-side">
+          <p class="title">Let's go!</p>
+
+          <div class="input">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" required>
+          </div>
+
+          <div class="input">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name" required>
+          </div>
+
+          <div class="input">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+
+          <div class="input">
+            <label for="phone">Phone Number</label>
+            <input type="text" name="phone" id="phone" required minlength="10" maxlength="10">
+          </div>
+
+          <div class="input">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+          </div>
+
+          <div class="input">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" name="confirm-password" id="confirm-password" required>
+          </div>
+        </div>
+        <div class="sign-up-btn">
+          <button type="submit">Create Account</button>
+        </div>
+      </form>
+      <div class="log-in">
+        <p>Already have an account?</p><a href="#">Log in</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
